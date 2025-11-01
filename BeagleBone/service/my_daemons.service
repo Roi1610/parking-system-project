@@ -1,0 +1,17 @@
+[Unit]
+Description=Embedded CLIENT and I2C Daemons
+After=network.target
+Wants=dev-i2c-2.device
+After=dev-i2c-2.device 
+Wants=dev-gpiochip1.device
+After=dev-gpiochip1.device
+
+[Service]
+Type=forking
+ExecStart=/home/debian/embedded/service/start_daemons.sh
+Restart=always
+User=debian
+Group=debian
+
+[Install]
+WantedBy=multi-user.target
