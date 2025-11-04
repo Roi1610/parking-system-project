@@ -174,12 +174,12 @@ make
 
 #### Run the server:
 ```bash
-./SERVER &
+./SERVER
 ```
 
 #### Run the price updater:
 ```bash
-./PRICE_UPDATER &
+./PRICE_UPDATER
 ```
 
 #### View the current database:
